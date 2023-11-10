@@ -115,14 +115,15 @@ h1 {
     color: #BD0606;
     font-size: 70px;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 
 }
 
 h2 {
     text-align: center;
-    margin: 0 5%;
     font-size: 30px;
+    margin: 0;
 }
 
 h3{
@@ -140,6 +141,7 @@ h3{
     align-items: start;
     padding-top: 100px;
     padding-bottom: 100px;
+    margin-right: 50px;
     gap: 3%;
 }
 
@@ -232,26 +234,36 @@ h3{
     border-radius: 5%;
     background-color: #D9D9D9;
     width: 300px;
-    height: auto;
+    height: 300px;
     padding: 15px;
     gap: 10px;
-    margin-left: 200px;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 .formulario input, .formulario select{
     width: 210px;
 }
 
-.mapa{
+.contenedor_contacto{
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
+.contenedor_informacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.contenedor_informacion a{
+    color: #212121;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
 /* #endregion CONTACTO */ 
 
@@ -260,8 +272,8 @@ h3{
 .redes{
     display: flex;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    background-color: #212121;
 }
 
 .redes li{
@@ -270,7 +282,7 @@ h3{
 
 .copy{
     background-color: #212121;
-    font-size: 15px;
+    font-size: 12px;
     color: #D7D6D6;
     display: flex;
     padding-left: 20px;
