@@ -2,7 +2,9 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>La Academia M</title>
     <link rel="stylesheet" href="estilos.css">
@@ -11,9 +13,9 @@
 
 <body id="arriba">
 
-    <header>
+    <div class="contenedor">
 
-        <div class="contenedor">
+        <header>
 
             <div class="flex">
                 <img src="img/isologo_academia.png" alt="isologotipo">
@@ -27,151 +29,152 @@
                     </ul>
                 </nav>
             </div>
-        </div>
-    </header>
+
+        </header>
 
 
-    <div>
-        <h1>LA ACADEMIA M</h1>
-    </div>
-
-    <!-- banner con parrafo y boton  -->
-
-    <div class="banner">
         <div>
-            <h3>ABIERTAS LAS</h3>
-            <h2>INSCRIPCIONES 2024</h2>
-            <p>Carreras y cursos para bailarines</p>
+            <h1>LA ACADEMIA M</h1>
         </div>
-        <button onclick="location.href='#formulario';"><strong>INSCRIBITE</strong></button> 
+
+        <!-- banner con parrafo y boton  -->
+
+        <div class="banner">
+            <div>
+                <h3>ABIERTAS LAS</h3>
+                <h2>INSCRIPCIONES 2024</h2>
+                <p>Carreras y cursos para bailarines</p>
+            </div>
+            <button onclick="location.href='#formulario';"><strong>INSCRIBITE</strong></button>
+        </div>
+
+
+        <section id="nosotros" class="contenedor">
+
+            <article class="nosotros">
+
+                <h2>Nosotros</h2>
+
+                <p> <strong> La Academia M </strong> es una escuela de danza, que inicia en 2019 y cumple el sueño de
+                    Barbara y Daniela, dos hermanas con el deseo de llenar sus salas con música, danza, estudiantes y
+                    profesores. Mujeres empoderadas que apostaron todo para convertir La Academia en una gran familia de
+                    apasionados por el arte, formarlos como profesionales y que se sientan como en su segunda casa.
+                </p>
+                <p> Barby Majule, bailarina y coreógrafa, dicta clases de jazz en el último año.
+                    Dani Majule, cantante y productora, quien acompaña a los estudiantes todos los días.
+                    Las directoras junto con un equipo de docentes increíbles, te esperan para entrenar y formarte.</p>
+
+            </article>
+        </section>
+
+        <section id="cursos">
+
+            <div class="cursos">
+                <h2> Cursos de formación profesional</h2>
+                <div class="tarjetas">
+                    <article>
+                        <h3> Carrera Bailarín Profesional </h3>
+                        <p>4 años</p>
+                        <p>Clásico, Jazz, Tap, Elongación, Urbano, Acrobacia, Parteneir, Salsa, Contemporáneo, Swing,
+                            Ballroom.</p>
+                    </article>
+
+                    <article>
+                        <h3> Entrenamiento técnico intensivo</h3>
+                        <p>Martes 11 a 13hs</p>
+                        <p>Clásico, Jazz y Elongación</p>
+                    </article>
+
+                    <article>
+                        <h3> Theater Jazz </h3>
+                        <p>Lunes 13 a 14.30hs</p>
+                        <p>Barby Majule</p>
+                        <p>Entrenamiento y coreografía</p>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="galeria">
+                <article>
+                    <img src="img/contemporaneo.jpg" alt="Contemporáneo">
+                </article>
+
+                <article>
+                    <img src="img/clasico.jpg" alt="Clásico">
+                </article>
+
+                <article>
+                    <img src="img/urbano.jpg" alt="Urbano">
+                </article>
+            </div>
+        </section>
+
+
+        <section id="contacto">
+
+            <a href="#arriba" class="Subir">
+                <img src="img/flecha.png" width="30" alt="Subir">
+            </a>
+
+            <h2>Contacto</h2>
+
+            <!-- formulario -->
+            <div id="formulario" class="contenedor_contacto">
+
+                <div class="formulario">
+                    <label for="nombre_completo">Nombre completo</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese su email">
+
+                    <label for="motivo">Curso de interés</label>
+                    <select name="motivo" id="motivo">
+                        <option value="">Seleccione una opción</option>
+                        <option value="carrera">Carrera de bailarín profesional</option>
+                        <option value="entrenamiento">Entrenamiento técnico intensivo</option>
+                        <option value="theater_jazz">Theater Jazz - Barby Majule</option>
+                    </select>
+                    <input type="submit" name="btnEnviar" id="btnEnviar" value="Enviar">
+                </div>
+
+                <div class="contenedorinformacion">
+
+                    <!-- mail -->
+                    <img src="img/icon-gmail.svg" alt="mail" width="22">
+
+                    <a href="mailto:info.laacademiam@gmail.com" target="_blank"> Contactanos</a>
+                    <!-- mapa -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.8061812063747!2d-58.446988024885826!3d-34.58377045644396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d775e4b963%3A0xe3845ad7db6c8ab5!2sLa%20Academia%20M!5e0!3m2!1ses!2sar!4v1699125952534!5m2!1ses!2sar"
+                        width="400" height="250" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="redes">
+
+                <li><a href="https://www.instagram.com/la.academiam/" target="_blank"><img src="img/icon-instagram.svg"
+                            width="30" alt="Instagram La Academia M"></a>
+                </li>
+                <li><a href="https://www.facebook.com/p/La-Academia-M-100080210163129/" target="_blank"><img
+                            src="img/icon-facebook.svg" width="30" alt="Facebook La Academia M"></a>
+                </li>
+            </div>
+
+            <div class="copy">
+                <p> &copy; 2023 Todos los derechos reservados. Aylén Castro.</p>
+
+            </div>
+        </footer>
     </div>
-
-
-    <section id="nosotros" class="contenedor">
-
-        <article class="nosotros">
-
-            <h2>Nosotros</h2>
-
-            <p> <strong> La Academia M </strong> es una escuela de danza, que inicia en 2019 y cumple el sueño de
-                Barbara y Daniela, dos hermanas con el deseo de llenar sus salas con música, danza, estudiantes y
-                profesores. Mujeres empoderadas que apostaron todo para convertir La Academia en una gran familia de
-                apasionados por el arte, formarlos como profesionales y que se sientan como en su segunda casa.
-            </p>
-            <p> Barby Majule, bailarina y coreógrafa, dicta clases de jazz en el último año.
-                Dani Majule, cantante y productora, quien acompaña a los estudiantes todos los días.
-                Las directoras junto con un equipo de docentes increíbles, te esperan para entrenar y formarte.</p>
-
-        </article>
-    </section>
-
-    <section id="cursos">
-
-        <div class="cursos">
-            <h2> Cursos de formación profesional</h2>
-            <div class="tarjetas">
-                <article>
-                    <h3> Carrera Bailarín Profesional </h3>
-                    <p>4 años</p>
-                    <p>Clásico, Jazz, Tap, Elongación, Urbano, Acrobacia, Parteneir, Salsa, Contemporáneo, Swing,
-                        Ballroom.</p>
-                </article>
-
-                <article>
-                    <h3> Entrenamiento técnico intensivo</h3>
-                    <p>Martes 11 a 13hs</p>
-                    <p>Clásico, Jazz y Elongación</p>
-                </article>
-
-                <article>
-                    <h3> Theater Jazz </h3>
-                    <p>Lunes 13 a 14.30hs</p>
-                    <p>Barby Majule</p>
-                    <p>Entrenamiento y coreografía</p>
-                </article>
-            </div>
-        </div>
-
-    </section>
-
-    <section>
-        <div class="galeria">
-            <article>
-                <img src="img/contemporaneo.jpg" alt="Contemporáneo">
-            </article>
-
-            <article>
-                <img src="img/clasico.jpg" alt="Clásico">
-            </article>
-
-            <article>
-                <img src="img/urbano.jpg" alt="Urbano">
-            </article>
-        </div>
-    </section>
-
-
-    <section id="contacto">
-
-        <a href="#arriba" class="Subir">
-            <img src="img/flecha.png" width="30" alt="Subir">
-        </a>
-
-        <h2>Contacto</h2>
-
-        <!-- formulario -->
-        <div id="formulario"  class="contenedor_contacto">
-
-            <div class="formulario">
-                <label for="nombre_completo">Nombre completo</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
-
-                <label for="email">Correo electrónico</label>
-                <input type="email" name="email" id="email" placeholder="Ingrese su email">
-
-                <label for="motivo">Curso de interés</label>
-                <select name="motivo" id="motivo">
-                    <option value="">Seleccione una opción</option>
-                    <option value="carrera">Carrera de bailarín profesional</option>
-                    <option value="entrenamiento">Entrenamiento técnico intensivo</option>
-                    <option value="theater_jazz">Theater Jazz - Barby Majule</option>
-                </select>
-                <input type="submit" name="btnEnviar" id="btnEnviar" value="Enviar">
-            </div>
-            
-            <div class="contenedorinformacion">
-             
-                <!-- mail -->
-                <img src="img/icon-gmail.svg" alt="mail" width="22">
-
-                <a href="mailto:info.laacademiam@gmail.com" target="_blank"> Contactanos</a>
-                <!-- mapa -->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.8061812063747!2d-58.446988024885826!3d-34.58377045644396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d775e4b963%3A0xe3845ad7db6c8ab5!2sLa%20Academia%20M!5e0!3m2!1ses!2sar!4v1699125952534!5m2!1ses!2sar"
-                    width="400" height="250"
-                     allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="redes">
-
-            <li><a href="https://www.instagram.com/la.academiam/" target="_blank"><img src="img/icon-instagram.svg"
-                        width="30" alt="Instagram La Academia M"></a>
-            </li>
-            <li><a href="https://www.facebook.com/p/La-Academia-M-100080210163129/" target="_blank"><img
-                        src="img/icon-facebook.svg" width="30" alt="Facebook La Academia M"></a>
-            </li>
-        </div>
-
-        <div class="copy">
-            <p> &copy; 2023 Todos los derechos reservados. Aylén Castro.</p>
-
-        </div>
-    </footer>
 </body>
+
 
 </html>
