@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.contenedor {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;   /*no scroll horizontal*/
+}
+
 
 body {
     font-family: 'Manrope', sans-serif;
@@ -33,12 +39,6 @@ header div nav ul {
     padding-right: 20px;
 }
 
-.contenedor {
-    min-width: 1200px;
-    max-width: 1320px;
-    padding: 0 12px;
-    margin: 0 auto;
-}
 
 
 .flex {
@@ -72,13 +72,14 @@ li {
 .banner{
     background-attachment: scroll;
     background-image: url(img/banner.png);
+    width: 100%;
     background-position: center; /*eje x, eje y*/
     background-repeat: no-repeat;
     background-size: cover;
     height: 240px;
+    height: auto;
     display: flex;
     justify-content: left;
-    gap: 1%;
     align-items: center;
 }
 
@@ -141,6 +142,7 @@ h3{
     align-items: start;
     padding-top: 100px;
     padding-bottom: 100px;
+    margin-left: 50px;
     margin-right: 50px;
     gap: 3%;
 }
@@ -288,3 +290,33 @@ h3{
     padding-left: 20px;
 }
 /* #endregion FOOTER*/
+
+
+
+@media screen and (max-width: 400px){
+    .header {
+        width: 100%;
+    }
+    .tarjetas {
+        width: 100%;
+    }
+    .banner {
+        width: 100%;
+    }
+    .cursos{
+        width: 100%;
+    }
+    .tarjetas article {
+        width: 100%;
+    }
+    .formulario {
+        width: 100%;
+    }
+    .contenedorinformacion {
+        width: 100%;
+    }
+    .galeria {
+        width: 100%;
+    }
+
+}
